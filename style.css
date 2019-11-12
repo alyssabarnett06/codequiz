@@ -1,0 +1,59 @@
+.jumbotron {
+    text-align: center;
+    padding: 0.2em 0.6em;
+    width: 100%;
+    opacity: 75%;
+    color: white;
+    background-color: #474390;
+}
+
+.btn {
+    color: white;
+    text-align: center;
+    background-color: #474390;
+    opacity: 75%;
+    font-size: 12pt;
+}
+
+#startGame{
+    color: white;
+}
+
+
+.answer:hover {
+    background: white;
+}
+h2{
+  /* text-decoration: underline; */
+  font-size: 25;
+}
+
+h3 {
+    background-color: #7572ac;
+    width: fit-content;
+    /* border: 2px solid; */
+    font-family: -webkit-body;
+    color: #080808;
+}
+
+body {
+    background-color:white;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: black;
+    /*text-shadow: 3px 3px black;*/
+    text-align: center;
+}
+
+.timer{
+    text-decoration: underline;
+
+}
+
+.timer-p{
+    text-decoration: underline;
+}
+
+

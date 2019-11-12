@@ -26,8 +26,6 @@ var correctArray = [
 ];
 
 
-
-
 var correctNum = 0;
 var incorrectNum = 0;
 var notAnsweredNum = 0;
@@ -116,21 +114,34 @@ function endOfGame() {
         notAnsweredNum + "</h3>" +
         "<h3 class='text-center reset-button-container'><a class='btn btn-primary btn-lg btn-block reset-button' href='#' role='button'>Reset The Quiz!</a></h3>";
     $(".gameDiv").html(gameHTML);
+    }
 
-
-}
 
 function wait() {
     if (counter < 4) {
         counter++;
         generateHTML();
-        timerCounter = 50;
-        clock();
     } else {
         endOfGame();
     }
 }
 
+$("body").on("click", ".reset-button", function(event) {
+         correctNum = 0;
+         incorrectNum = 0;
+         notAnsweredNum = 0;
+         counter = 0;
+         time = 0;
+         timerCounter = 50;
+        resetGame();
+    });
+    
+
+    // Reset the game
+function resetGame() {
+    generateHTML();
+    clock();
+}
 
 
 
